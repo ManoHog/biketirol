@@ -1,5 +1,5 @@
 const ETAPPEN = [
-    [
+    
         {
           "nr": 6,
           "etappe": "Ehrwald - Scharnitz",
@@ -72,5 +72,5 @@ const ETAPPEN = [
           "user": "damerow",
           "weblink": "https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-imst-marienbergjoch-ehrwald"
         }
-       ]
+       
 ]

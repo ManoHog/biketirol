@@ -71,4 +71,9 @@ controlElevation.load("data/etappe10.gpx");
 
 //let profileDiv = document.querySelector("#profile");
 
-console.log(ETAPPEN)
+// Pulldown für Navigation
+let pulldown = document.querySelector("#pulldown");
+for (let etappe of ETAPPEN) {
+    console.log(etappe);
+    pulldown.innerHTML += `<option value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.etappe}</option>`;
+}
