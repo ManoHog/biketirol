@@ -74,6 +74,18 @@ controlElevation.load("data/etappe10.gpx");
 // Pulldown für Navigation
 let pulldown = document.querySelector("#pulldown");
 for (let etappe of ETAPPEN) {
-    console.log(etappe);
-    pulldown.innerHTML += `<option value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.etappe}</option>`;
+    //console.log(etappe);
+    let status = "";
+    if(etappe.nr == "10") {
+        status = "selected";
+    }
+    pulldown.innerHTML += `<option ${status} value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.etappe}</option>`;
+}
+
+//auf Änderungen im Pulldown reagieren 
+pulldown.onchange = function (evt) {
+    //console.log(pulldown.value);
+    let url = `https://${pulldown.vale}.github.io/biketirol`;
+    //console.log(url);
+    window.location.href = url; 
 }
