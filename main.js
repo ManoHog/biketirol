@@ -57,3 +57,9 @@ let layerControl = L.control.layers({
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+// GPX TRack visualisieren 
+let controlElevation = L.control.elevation({
+
+}).addTo(map);
+controlElevation.load("data/etappe10.gpx");
