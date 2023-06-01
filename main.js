@@ -85,7 +85,7 @@ for (let etappe of ETAPPEN) {
 //auf Änderungen im Pulldown reagieren 
 pulldown.onchange = function (evt) {
     //console.log(pulldown.value);
-    let url = `https://${pulldown.vale}.github.io/biketirol`;
+    let url = `https://${pulldown.value}.github.io/biketirol`;
     //console.log(url);
     window.location.href = url; 
 }
